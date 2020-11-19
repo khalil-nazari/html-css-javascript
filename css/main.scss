@@ -1,0 +1,60 @@
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style-type: none;
+    box-sizing: border-box;
+}
+
+
+html {
+    width: 100%;
+    height: 100%;
+}
+
+$bg: rgb(21, 20, 36);
+
+body {
+    background-color: $bg; 
+    font-family: 'Roboto', sans-serif;
+
+}
+
+.container {
+    width: 90%;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+.header-top {
+    color: #fff;
+    padding: 2rem 0;
+}
+
+.projects {
+
+    .cards {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+        gap: .7rem;
+
+        .card {
+            color: white;
+            background-color: #1f2c62;
+            box-shadow: 0 0 5px 2px #0f1735;
+            transition: transform .4s;
+            &:hover {
+                transform: translateY(-5px);
+            }
+
+            .card-info {
+                padding: 1rem;
+                a {
+                    color: white;
+                    display: block;
+                    margin: 1.5rem 0;
+                    text-align: center;
+                }
+            }
+        }
+    }
+}
