@@ -1,0 +1,90 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+body {
+    background-color: #1152ba;
+    display: grid;
+    height: 100vh;
+    place-content: center;
+    font-family: 'Nunito', 'Arial';
+    position: relative;
+}
+
+
+button {
+    border:none;
+    outline:none;
+    padding: .8rem 2rem;
+    background-color: #3179eb;
+    border-radius: 5rem;
+    font-size: .8rem;
+    color: white;
+    cursor: pointer;
+    transition: background-color .4s;
+    &:hover {
+        background-color: #002d75;
+    }
+}
+
+
+.overlay {
+    position: fixed;
+    background-color: #ffffff;
+    width: 100%;
+    height: 100%;
+    overflow-y: scroll;
+    overflow-x:hidden;
+    padding: 2rem 2rem 0 2rem;
+    // display: none;
+    clip-path: circle(0%);
+    
+    .exit {
+        cursor: pointer;
+        width: 20px;
+        height: 20px;
+        position: absolute;
+        top: 1.5rem; 
+        right: 1.5rem;
+    }
+}
+
+.menu {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+}
+
+.menu-category {
+    margin-bottom: 2rem;
+    opacity: 0;
+    transform: translateY(-30px);
+
+    p.category {
+        color:  #1152ba;
+        font-size: 1.2rem;
+        font-weight: 700;
+        margin-left: 1rem;
+    }
+
+    ul {
+        list-style-type: none;
+        padding: 0;
+
+        li a {
+            text-decoration: none;
+            color: black;
+            display: block;
+            padding: .8rem 2rem .8rem 1rem;
+            transition: background-color .4s;
+            font-size: .9rem;
+            &:hover {
+                background-color: rgb(235, 235, 235);
+                border-radius: .2rem;
+            }
+        }
+    }
+}

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./css/main.css">
+
+    <title>Full Screen Navigation</title>
+</head>
+<body>
+    
+    <button class="navbtn">Open Menu</button>
+   
+
+    <div class="overlay">
+        <img class="exit" src="./images/close-icon.png" alt="">
+
+        <div class="menu">
+            <div class="menu-category">
+                <p class="category">Category</p>
+
+                <ul>
+                    <li><a href="#">Clickable Link Example</a></li>
+                    <li><a href="#">Clickable Link Example</a></li>
+                    <li><a href="#">Clickable Link Example</a></li>
+                    <li><a href="#">Clickable Link Example</a></li>
+                    <li><a href="#">Clickable Link Example</a></li>
+                </ul>
+            </div>
+
+            <div class="menu-category">
+                <p class="category">Category</p>
+
+                <ul>
+                    <li><a href="#">Clickable Link Example</a></li>
+                    <li><a href="#">Clickable Link Example</a></li>
+                    <li><a href="#">Clickable Link Example</a></li>
+                    <li><a href="#">Clickable Link Example</a></li>
+                    <li><a href="#">Clickable Link Example</a></li>
+                </ul>
+            </div>
+
+            <div class="menu-category">
+                <p class="category">Category</p>
+
+                <ul>
+                    <li><a href="#">Clickable Link Example</a></li>
+                    <li><a href="#">Clickable Link Example</a></li>
+                    <li><a href="#">Clickable Link Example</a></li>
+                    <li><a href="#">Clickable Link Example</a></li>
+                    <li><a href="#">Clickable Link Example</a></li>
+                </ul>
+            </div>
+
+            <div class="menu-category">
+                <p class="category">Category</p>
+
+                <ul>
+                    <li><a href="#">Clickable Link Example</a></li>
+                    <li><a href="#">Clickable Link Example</a></li>
+                    <li><a href="#">Clickable Link Example</a></li>
+                    <li><a href="#">Clickable Link Example</a></li>
+                    <li><a href="#">Clickable Link Example</a></li>
+                </ul>
+            </div>
+
+            <div class="menu-category">
+                <p class="category">Category</p>
+
+                <ul>
+                    <li><a href="#">Clickable Link Example</a></li>
+                    <li><a href="#">Clickable Link Example</a></li>
+                    <li><a href="#">Clickable Link Example</a></li>
+                    <li><a href="#">Clickable Link Example</a></li>
+                    <li><a href="#">Clickable Link Example</a></li>
+                </ul>
+            </div>
+
+            <div class="menu-category">
+                <p class="category">Category</p>
+
+                <ul>
+                    <li><a href="#">Clickable Link Example</a></li>
+                    <li><a href="#">Clickable Link Example</a></li>
+                    <li><a href="#">Clickable Link Example</a></li>
+                    <li><a href="#">Clickable Link Example</a></li>
+                    <li><a href="#">Clickable Link Example</a></li>
+                </ul>
+            </div>
+
+            <div class="menu-category">
+                <p class="category">Category</p>
+
+                <ul>
+                    <li><a href="#">Clickable Link Example</a></li>
+                    <li><a href="#">Clickable Link Example</a></li>
+                    <li><a href="#">Clickable Link Example</a></li>
+                    <li><a href="#">Clickable Link Example</a></li>
+                    <li><a href="#">Clickable Link Example</a></li>
+                </ul>
+            </div>
+
+            <div class="menu-category">
+                <p class="category">Category</p>
+
+                <ul>
+                    <li><a href="#">Clickable Link Example</a></li>
+                    <li><a href="#">Clickable Link Example</a></li>
+                    <li><a href="#">Clickable Link Example</a></li>
+                    <li><a href="#">Clickable Link Example</a></li>
+                    <li><a href="#">Clickable Link Example</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js" integrity="sha512-IQLehpLoVS4fNzl7IfH8Iowfm5+RiMGtHykgZJl9AWMgqx0AmJ6cRWcB+GaGVtIsnC4voMfm8f2vwtY+6oPjpQ==" crossorigin="anonymous"></script>
+
+    <script>
+        const navbtn = document.querySelector('.navbtn');
+        const overlay = document.querySelector('.overlay');
+        const exitbtn = document.querySelector('.exit');
+        exitbtn.addEventListener('click', ()=>{
+            console.log("hey")
+        })
+        var tl = gsap.timeline({defaults:{duration:1, ease: Back.easeOut.config(2)}})
+        tl.paused(true);
+        tl.to(".overlay", {clipPath:'circle(100%)'})
+        tl.to(".menu-category", {opacity:1, y:'30px', stagger:0.1}, "-=1")
+
+
+        navbtn.addEventListener('click', () => {
+            tl.play();
+        });
+
+        exitbtn.addEventListener('click', () => {
+            tl.reverse(.6);
+        });
+
+    </script>
+</body>
+</html>
