@@ -1,0 +1,43 @@
+.grid_card_container {
+    width: 90%;
+    margin: 0 auto;
+
+
+    h1 {
+        margin: 3rem auto;
+    }
+}
+
+.grid_cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
+
+    .grid_card {
+        cursor: pointer;
+        transition: transform 1s;
+        &:hover {
+            transform: translateY(-10px);
+        }
+        margin-bottom: 1rem;
+
+        @for $i from 1 through 6 {
+            &:nth-of-type(#{$i}) {
+                background-color: nth($gird_card_colors, $i);
+            }
+        }
+
+        .info {
+            padding: 10px;
+            h3 {
+                margin-bottom: 1rem;
+            }
+            p {
+                margin-bottom: 1rem;
+            }
+        }
+
+        img {
+            width: 100%;
+        }
+    }
+}

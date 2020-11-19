@@ -1,0 +1,15 @@
+$gird_card_colors : rgb(185, 185, 185), rgb(243, 235, 235), rgb(226, 222, 222), rgb(209, 191, 191), rgb(240, 236, 236), rgb(212, 186, 186);
+
+* {
+    padding:0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Roboto', 'sans-serif';
+}
+
+
+/* responsive card with no media query */
+@import 'responsive_card_noquery';
+
