@@ -1,0 +1,540 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    width: 100%;
+}
+
+body {
+    font-family: 'Roboto', 'Sans-serif'; 
+    background-color: rgb(221, 208, 224);
+}
+
+
+header {
+    padding: 4rem;
+    background-color: rgb(61, 39, 66);
+    color:#fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    button {
+        background-color: rgb(104, 44, 145);
+        border-radius: 5rem;
+        padding: .5rem 1rem;
+        margin: 0 1rem; 
+        border: none;
+        color: #fff;
+        text-transform: uppercase;
+        font-size: .8rem;
+        outline: none;
+        transition: background-color .5s;
+        &:hover {
+            cursor: pointer;
+            background-color:rgb(170, 83, 228);
+        }
+    }
+}
+
+.map {
+    width: 100%;
+    height: 600px;
+    background-color: rgb(135, 172, 139);
+    color: rgb(255, 255, 255);
+    font-size: 4rem;
+    display: grid;
+    place-content: center;
+}
+
+.contact_sample {
+    display: none;
+    margin: 1rem 0;
+}
+
+.contact_2c {
+    margin: 3rem 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: #fff;
+
+    .contact {
+        display: grid;
+        place-items: center;
+
+        .contact_detail {
+            width: 500px;
+
+            .heading {
+                margin-bottom: 1.7rem;
+                font-size: 2rem;
+            }
+            
+            .description {
+                margin-bottom: 1.7rem;
+                line-height: 1.7rem;
+            }
+
+            .phone-email {
+                margin-bottom: 1.7rem;
+                display: flex;
+                gap: 1rem;
+                .phone, .email {
+                    border: 1px solid transparent;
+                    border-radius: 5rem;
+                    padding: .5rem 1rem;
+                }
+
+                .phone {
+                    background-color: rgb(47, 170, 47);
+                    color: white;
+                    i {
+                        margin-right: .5rem;
+                        font-size: 1.2rem;
+                    }
+                }
+                .email {
+                    background-color: rgb(201, 201, 201);
+                    i {
+                        color: white;
+                        margin-right: .5rem;
+                        font-size: 1.2rem;
+                    }
+                }
+            }
+
+
+            .location {
+                display: flex;
+                border: 1px solid rgb(182, 182, 182);
+                border-radius: .7rem;
+                padding: 1.3rem 1.3rem;
+                p {
+                    line-height: 1.7rem;
+                }
+                i {
+                    color: rgb(85, 85, 85);
+                    margin-right: .5rem;
+                    font-size: 1.6rem;  
+                }
+            }
+        }
+    }
+}
+
+.contact_2rwos {
+    background-color: #fff;
+    margin: 3rem 0;
+    
+    .contact {
+        width: 90%;
+        max-width: 900px;
+        margin: 0 auto;
+
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 2rem;
+        padding: 8rem 0;
+
+        .contact_detail {
+            
+
+            .heading {
+                margin-bottom: 1.7rem;
+                font-size: 2rem;
+            }
+            
+            .description {
+                margin-bottom: 1.7rem;
+                line-height: 1.7rem;
+            }
+
+            
+
+            .location {
+                display: flex;
+                border: 1px solid rgb(182, 182, 182);
+                border-radius: .7rem;
+                padding: 1.3rem 1.3rem;
+                p {
+                    line-height: 1.7rem;
+                }
+                i {
+                    color: rgb(85, 85, 85);
+                    margin-right: .5rem;
+                    font-size: 1.6rem;  
+                }
+            }
+        }
+
+        .phone-email {
+            padding: 1rem 0rem 0rem 4rem;
+            display: flex;
+            flex-direction: column;
+            .phone, .email {
+                border: 1px solid transparent;
+                border-radius: 5rem;
+                padding: .5rem 1rem;
+            }
+
+            .phone {
+                background-color: rgb(47, 170, 47);
+                color: white;
+                margin-bottom: 1rem;
+                i {
+                    margin-right: .5rem;
+                    font-size: 1.2rem;
+                }
+            }
+            .email {
+                background-color: rgb(201, 201, 201);
+                i {
+                    color: white;
+                    margin-right: .5rem;
+                    font-size: 1.2rem;
+                }
+            }
+        }
+    }
+}
+
+
+.contact_2rwos_overlap {
+    background-color: #fff;
+    margin: 3rem 0;
+    
+    .contact {
+        transform: translateY(-150px);
+        background-color: white;
+        padding: 3rem 3rem 1rem 3rem;
+        border-radius: 5px;
+        width: 90%;
+        max-width: 900px;
+        margin: 0 auto;
+
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 2rem;
+        
+
+        .contact_detail {
+            
+
+            .heading {
+                margin-bottom: 1.7rem;
+                font-size: 2rem;
+            }
+            
+            .description {
+                margin-bottom: 1.7rem;
+                line-height: 1.7rem;
+            }
+
+            
+
+            .location {
+                display: flex;
+                border: 1px solid rgb(182, 182, 182);
+                border-radius: .7rem;
+                padding: 1.3rem 1.3rem;
+                p {
+                    line-height: 1.7rem;
+                }
+                i {
+                    color: rgb(85, 85, 85);
+                    margin-right: .5rem;
+                    font-size: 1.6rem;  
+                }
+            }
+        }
+
+        .phone-email {
+            padding: 1rem 0rem 0rem 4rem;
+            display: flex;
+            flex-direction: column;
+            .phone, .email {
+                border: 1px solid transparent;
+                border-radius: 5rem;
+                padding: .5rem 1rem;
+            }
+
+            .phone {
+                background-color: rgb(47, 170, 47);
+                color: white;
+                margin-bottom: 1rem;
+                i {
+                    margin-right: .5rem;
+                    font-size: 1.2rem;
+                }
+            }
+            .email {
+                background-color: rgb(201, 201, 201);
+                i {
+                    color: white;
+                    margin-right: .5rem;
+                    font-size: 1.2rem;
+                }
+            }
+        }
+    }
+}
+
+
+.contact_2rows_centered {
+    display: grid;
+    place-items: center;
+    height: 600px;
+    background-color: #fff;
+    margin: 3rem 0;
+    
+    .contact_wrapper {
+        width: 90%;
+        max-width: 950px;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 2rem;
+        // grid-gap: 2rem;
+    
+        .contact {
+            display: grid;
+            place-items: center;
+            padding: 2rem;
+            .contact_detail {
+                .heading {
+                    margin-bottom: 1.7rem;
+                    font-size: 2rem;
+                }
+                .description {
+                    margin-bottom: 1.7rem;
+                    line-height: 1.7rem;
+                }
+                .phone-email {
+                    margin-bottom: 1.7rem;
+                    display: flex;
+                    gap: .3rem;
+                    .phone, .email {
+                        border: 1px solid transparent;
+                        border-radius: 5rem;
+                        padding: .4rem .7rem;
+                    }
+    
+                    .phone {
+                        background-color: rgb(47, 170, 47);
+                        color: white;
+                        i {
+                            margin-right: .3rem;
+                            font-size: 1.2rem;
+                        }
+                    }
+                    .email {
+                        background-color: rgb(201, 201, 201);
+                        i {
+                            color: white;
+                            margin-right: .3rem;
+                            font-size: 1.2rem;
+                        }
+                    }
+                }
+    
+                .location {
+                    display: flex;
+                    border: 1px solid rgb(182, 182, 182);
+                    border-radius: .7rem;
+                    padding: 1.3rem 1.3rem;
+                    p {
+                        line-height: 1.7rem;
+                    }
+                    i {
+                        color: rgb(255, 255, 255);
+                        margin-right: .5rem;
+                        font-size: 1.6rem;  
+                    }
+                }
+            }
+        }
+    }
+
+    .map {
+        width: 100%;
+        height: 100%;
+        background-color: rgb(138, 189, 142);
+        color: rgb(255, 255, 255);
+        font-size: 4rem;
+        display: grid;
+        place-content: center;
+    }
+    
+}
+
+.contact_over_map {
+    position: relative;
+    .map {
+        display: block;
+        text-align: center;
+        i {
+            margin-top: 5rem;
+        }
+    }
+
+    .contact_wrapper {
+        background-color: #fff;
+        position: absolute;
+        bottom: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+        padding: 1rem;
+
+        display: grid;
+        place-items: center;
+
+        .contact {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            
+            .contact_detail {
+                .heading {
+                    margin-bottom: 1.4rem;
+                    font-size: 2rem;
+                }
+                .description {
+                    margin-bottom: 1.7rem;
+                    line-height: 1.2rem;
+                }
+
+                .location {
+                    display: flex;
+                    border: 1px solid rgb(182, 182, 182);
+                    border-radius: .7rem;
+                    padding: 1.3rem 1.3rem;
+                    p {
+                        line-height: 1.7rem;
+                    }
+                    i {
+                        color: rgb(255, 255, 255);
+                        margin-right: .5rem;
+                        font-size: 1.6rem;  
+                    }
+                }
+            }
+
+            .phone-email {
+                width: 250px;
+                margin-left: 100px;
+                margin-top: 50px;
+                .phone, .email {
+                    border: 1px solid transparent;
+                    border-radius: 5rem;
+                    padding: .4rem .7rem;
+                    margin-bottom: .7rem;
+                }
+                .phone {
+                    background-color: rgb(47, 170, 47);
+                    color: white;
+                    i {
+                        margin-right: .3rem;
+                        font-size: 1.2rem;
+                    }
+                }
+                .email {
+                    background-color: rgb(201, 201, 201);
+                    i {
+                        color: white;
+                        margin-right: .3rem;
+                        font-size: 1.2rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.contact_cliped {
+    background-color: #fff;
+    position: relative;
+    .map {
+        clip-path: polygon(49% 0, 100% 0, 100% 100%, 24% 100%); 
+        display: block;
+        text-align: right;
+        i {
+            margin-right: 13rem;
+            margin-top: 13rem;
+        }
+    }
+
+    .contact_wrapper {
+        position: absolute;
+        left: 15%;
+        top: 50%;
+        transform: translateY(-50%);
+        
+        background-color: #fff;
+        box-shadow: -7px 11px 24px 1px #c3c3c3;
+        padding: 1rem;
+
+        .contact {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            max-width: 700px;
+            .contact_detail {
+                .heading {
+                    margin-bottom: 1.4rem;
+                    font-size: 2rem;
+                }
+                .description {
+                    margin-bottom: 1.7rem;
+                    line-height: 1.2rem;
+                }
+
+                .phone-email {
+                    width: 250px;
+                    
+                    margin-top: 30px;
+                    .phone, .email {
+                        border: 1px solid transparent;
+                        border-radius: 5rem;
+                        padding: .4rem .7rem;
+                        margin-bottom: .7rem;
+                    }
+                    .phone {
+                        background-color: rgb(47, 170, 47);
+                        color: white;
+                        i {
+                            margin-right: .3rem;
+                            font-size: 1.2rem;
+                        }
+                    }
+                    .email {
+                        background-color: rgb(201, 201, 201);
+                        i {
+                            color: white;
+                            margin-right: .3rem;
+                            font-size: 1.2rem;
+                        }
+                    }
+                }
+            }
+            .location {
+                div {
+                    display: flex;
+                    border: 1px solid rgb(182, 182, 182);
+                    border-radius: .7rem;
+                    padding: 1.3rem 1.3rem;
+                    p {
+                        line-height: 1.7rem;
+                    }
+                    i {
+                        color: rgb(78, 78, 78);
+                        margin-right: .5rem;
+                        font-size: 1.6rem;  
+                    }
+                }
+            }
+            
+        }
+    }
+
+}

@@ -1,0 +1,557 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  width: 100%;
+}
+
+body {
+  font-family: 'Roboto', 'Sans-serif';
+  background-color: #ddd0e0;
+}
+
+header {
+  padding: 4rem;
+  background-color: #3d2742;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header button {
+  background-color: #682c91;
+  border-radius: 5rem;
+  padding: .5rem 1rem;
+  margin: 0 1rem;
+  border: none;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: .8rem;
+  outline: none;
+  transition: background-color .5s;
+}
+
+header button:hover {
+  cursor: pointer;
+  background-color: #aa53e4;
+}
+
+.map {
+  width: 100%;
+  height: 600px;
+  background-color: #87ac8b;
+  color: white;
+  font-size: 4rem;
+  display: grid;
+  place-content: center;
+}
+
+.contact_sample {
+  display: none;
+  margin: 1rem 0;
+}
+
+.contact_2c {
+  margin: 3rem 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background-color: #fff;
+}
+
+.contact_2c .contact {
+  display: grid;
+  place-items: center;
+}
+
+.contact_2c .contact .contact_detail {
+  width: 500px;
+}
+
+.contact_2c .contact .contact_detail .heading {
+  margin-bottom: 1.7rem;
+  font-size: 2rem;
+}
+
+.contact_2c .contact .contact_detail .description {
+  margin-bottom: 1.7rem;
+  line-height: 1.7rem;
+}
+
+.contact_2c .contact .contact_detail .phone-email {
+  margin-bottom: 1.7rem;
+  display: flex;
+  gap: 1rem;
+}
+
+.contact_2c .contact .contact_detail .phone-email .phone, .contact_2c .contact .contact_detail .phone-email .email {
+  border: 1px solid transparent;
+  border-radius: 5rem;
+  padding: .5rem 1rem;
+}
+
+.contact_2c .contact .contact_detail .phone-email .phone {
+  background-color: #2faa2f;
+  color: white;
+}
+
+.contact_2c .contact .contact_detail .phone-email .phone i {
+  margin-right: .5rem;
+  font-size: 1.2rem;
+}
+
+.contact_2c .contact .contact_detail .phone-email .email {
+  background-color: #c9c9c9;
+}
+
+.contact_2c .contact .contact_detail .phone-email .email i {
+  color: white;
+  margin-right: .5rem;
+  font-size: 1.2rem;
+}
+
+.contact_2c .contact .contact_detail .location {
+  display: flex;
+  border: 1px solid #b6b6b6;
+  border-radius: .7rem;
+  padding: 1.3rem 1.3rem;
+}
+
+.contact_2c .contact .contact_detail .location p {
+  line-height: 1.7rem;
+}
+
+.contact_2c .contact .contact_detail .location i {
+  color: #555555;
+  margin-right: .5rem;
+  font-size: 1.6rem;
+}
+
+.contact_2rwos {
+  background-color: #fff;
+  margin: 3rem 0;
+}
+
+.contact_2rwos .contact {
+  width: 90%;
+  max-width: 900px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 2rem;
+  padding: 8rem 0;
+}
+
+.contact_2rwos .contact .contact_detail .heading {
+  margin-bottom: 1.7rem;
+  font-size: 2rem;
+}
+
+.contact_2rwos .contact .contact_detail .description {
+  margin-bottom: 1.7rem;
+  line-height: 1.7rem;
+}
+
+.contact_2rwos .contact .contact_detail .location {
+  display: flex;
+  border: 1px solid #b6b6b6;
+  border-radius: .7rem;
+  padding: 1.3rem 1.3rem;
+}
+
+.contact_2rwos .contact .contact_detail .location p {
+  line-height: 1.7rem;
+}
+
+.contact_2rwos .contact .contact_detail .location i {
+  color: #555555;
+  margin-right: .5rem;
+  font-size: 1.6rem;
+}
+
+.contact_2rwos .contact .phone-email {
+  padding: 1rem 0rem 0rem 4rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.contact_2rwos .contact .phone-email .phone, .contact_2rwos .contact .phone-email .email {
+  border: 1px solid transparent;
+  border-radius: 5rem;
+  padding: .5rem 1rem;
+}
+
+.contact_2rwos .contact .phone-email .phone {
+  background-color: #2faa2f;
+  color: white;
+  margin-bottom: 1rem;
+}
+
+.contact_2rwos .contact .phone-email .phone i {
+  margin-right: .5rem;
+  font-size: 1.2rem;
+}
+
+.contact_2rwos .contact .phone-email .email {
+  background-color: #c9c9c9;
+}
+
+.contact_2rwos .contact .phone-email .email i {
+  color: white;
+  margin-right: .5rem;
+  font-size: 1.2rem;
+}
+
+.contact_2rwos_overlap {
+  background-color: #fff;
+  margin: 3rem 0;
+}
+
+.contact_2rwos_overlap .contact {
+  transform: translateY(-150px);
+  background-color: white;
+  padding: 3rem 3rem 1rem 3rem;
+  border-radius: 5px;
+  width: 90%;
+  max-width: 900px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 2rem;
+}
+
+.contact_2rwos_overlap .contact .contact_detail .heading {
+  margin-bottom: 1.7rem;
+  font-size: 2rem;
+}
+
+.contact_2rwos_overlap .contact .contact_detail .description {
+  margin-bottom: 1.7rem;
+  line-height: 1.7rem;
+}
+
+.contact_2rwos_overlap .contact .contact_detail .location {
+  display: flex;
+  border: 1px solid #b6b6b6;
+  border-radius: .7rem;
+  padding: 1.3rem 1.3rem;
+}
+
+.contact_2rwos_overlap .contact .contact_detail .location p {
+  line-height: 1.7rem;
+}
+
+.contact_2rwos_overlap .contact .contact_detail .location i {
+  color: #555555;
+  margin-right: .5rem;
+  font-size: 1.6rem;
+}
+
+.contact_2rwos_overlap .contact .phone-email {
+  padding: 1rem 0rem 0rem 4rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.contact_2rwos_overlap .contact .phone-email .phone, .contact_2rwos_overlap .contact .phone-email .email {
+  border: 1px solid transparent;
+  border-radius: 5rem;
+  padding: .5rem 1rem;
+}
+
+.contact_2rwos_overlap .contact .phone-email .phone {
+  background-color: #2faa2f;
+  color: white;
+  margin-bottom: 1rem;
+}
+
+.contact_2rwos_overlap .contact .phone-email .phone i {
+  margin-right: .5rem;
+  font-size: 1.2rem;
+}
+
+.contact_2rwos_overlap .contact .phone-email .email {
+  background-color: #c9c9c9;
+}
+
+.contact_2rwos_overlap .contact .phone-email .email i {
+  color: white;
+  margin-right: .5rem;
+  font-size: 1.2rem;
+}
+
+.contact_2rows_centered {
+  display: grid;
+  place-items: center;
+  height: 600px;
+  background-color: #fff;
+  margin: 3rem 0;
+}
+
+.contact_2rows_centered .contact_wrapper {
+  width: 90%;
+  max-width: 950px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 2rem;
+}
+
+.contact_2rows_centered .contact_wrapper .contact {
+  display: grid;
+  place-items: center;
+  padding: 2rem;
+}
+
+.contact_2rows_centered .contact_wrapper .contact .contact_detail .heading {
+  margin-bottom: 1.7rem;
+  font-size: 2rem;
+}
+
+.contact_2rows_centered .contact_wrapper .contact .contact_detail .description {
+  margin-bottom: 1.7rem;
+  line-height: 1.7rem;
+}
+
+.contact_2rows_centered .contact_wrapper .contact .contact_detail .phone-email {
+  margin-bottom: 1.7rem;
+  display: flex;
+  gap: .3rem;
+}
+
+.contact_2rows_centered .contact_wrapper .contact .contact_detail .phone-email .phone, .contact_2rows_centered .contact_wrapper .contact .contact_detail .phone-email .email {
+  border: 1px solid transparent;
+  border-radius: 5rem;
+  padding: .4rem .7rem;
+}
+
+.contact_2rows_centered .contact_wrapper .contact .contact_detail .phone-email .phone {
+  background-color: #2faa2f;
+  color: white;
+}
+
+.contact_2rows_centered .contact_wrapper .contact .contact_detail .phone-email .phone i {
+  margin-right: .3rem;
+  font-size: 1.2rem;
+}
+
+.contact_2rows_centered .contact_wrapper .contact .contact_detail .phone-email .email {
+  background-color: #c9c9c9;
+}
+
+.contact_2rows_centered .contact_wrapper .contact .contact_detail .phone-email .email i {
+  color: white;
+  margin-right: .3rem;
+  font-size: 1.2rem;
+}
+
+.contact_2rows_centered .contact_wrapper .contact .contact_detail .location {
+  display: flex;
+  border: 1px solid #b6b6b6;
+  border-radius: .7rem;
+  padding: 1.3rem 1.3rem;
+}
+
+.contact_2rows_centered .contact_wrapper .contact .contact_detail .location p {
+  line-height: 1.7rem;
+}
+
+.contact_2rows_centered .contact_wrapper .contact .contact_detail .location i {
+  color: white;
+  margin-right: .5rem;
+  font-size: 1.6rem;
+}
+
+.contact_2rows_centered .map {
+  width: 100%;
+  height: 100%;
+  background-color: #8abd8e;
+  color: white;
+  font-size: 4rem;
+  display: grid;
+  place-content: center;
+}
+
+.contact_over_map {
+  position: relative;
+}
+
+.contact_over_map .map {
+  display: block;
+  text-align: center;
+}
+
+.contact_over_map .map i {
+  margin-top: 5rem;
+}
+
+.contact_over_map .contact_wrapper {
+  background-color: #fff;
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 1rem;
+  display: grid;
+  place-items: center;
+}
+
+.contact_over_map .contact_wrapper .contact {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.contact_over_map .contact_wrapper .contact .contact_detail .heading {
+  margin-bottom: 1.4rem;
+  font-size: 2rem;
+}
+
+.contact_over_map .contact_wrapper .contact .contact_detail .description {
+  margin-bottom: 1.7rem;
+  line-height: 1.2rem;
+}
+
+.contact_over_map .contact_wrapper .contact .contact_detail .location {
+  display: flex;
+  border: 1px solid #b6b6b6;
+  border-radius: .7rem;
+  padding: 1.3rem 1.3rem;
+}
+
+.contact_over_map .contact_wrapper .contact .contact_detail .location p {
+  line-height: 1.7rem;
+}
+
+.contact_over_map .contact_wrapper .contact .contact_detail .location i {
+  color: white;
+  margin-right: .5rem;
+  font-size: 1.6rem;
+}
+
+.contact_over_map .contact_wrapper .contact .phone-email {
+  width: 250px;
+  margin-left: 100px;
+  margin-top: 50px;
+}
+
+.contact_over_map .contact_wrapper .contact .phone-email .phone, .contact_over_map .contact_wrapper .contact .phone-email .email {
+  border: 1px solid transparent;
+  border-radius: 5rem;
+  padding: .4rem .7rem;
+  margin-bottom: .7rem;
+}
+
+.contact_over_map .contact_wrapper .contact .phone-email .phone {
+  background-color: #2faa2f;
+  color: white;
+}
+
+.contact_over_map .contact_wrapper .contact .phone-email .phone i {
+  margin-right: .3rem;
+  font-size: 1.2rem;
+}
+
+.contact_over_map .contact_wrapper .contact .phone-email .email {
+  background-color: #c9c9c9;
+}
+
+.contact_over_map .contact_wrapper .contact .phone-email .email i {
+  color: white;
+  margin-right: .3rem;
+  font-size: 1.2rem;
+}
+
+.contact_cliped {
+  background-color: #fff;
+  position: relative;
+}
+
+.contact_cliped .map {
+  clip-path: polygon(49% 0, 100% 0, 100% 100%, 24% 100%);
+  display: block;
+  text-align: right;
+}
+
+.contact_cliped .map i {
+  margin-right: 13rem;
+  margin-top: 13rem;
+}
+
+.contact_cliped .contact_wrapper {
+  position: absolute;
+  left: 15%;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #fff;
+  box-shadow: -7px 11px 24px 1px #c3c3c3;
+  padding: 1rem;
+}
+
+.contact_cliped .contact_wrapper .contact {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  max-width: 700px;
+}
+
+.contact_cliped .contact_wrapper .contact .contact_detail .heading {
+  margin-bottom: 1.4rem;
+  font-size: 2rem;
+}
+
+.contact_cliped .contact_wrapper .contact .contact_detail .description {
+  margin-bottom: 1.7rem;
+  line-height: 1.2rem;
+}
+
+.contact_cliped .contact_wrapper .contact .contact_detail .phone-email {
+  width: 250px;
+  margin-top: 30px;
+}
+
+.contact_cliped .contact_wrapper .contact .contact_detail .phone-email .phone, .contact_cliped .contact_wrapper .contact .contact_detail .phone-email .email {
+  border: 1px solid transparent;
+  border-radius: 5rem;
+  padding: .4rem .7rem;
+  margin-bottom: .7rem;
+}
+
+.contact_cliped .contact_wrapper .contact .contact_detail .phone-email .phone {
+  background-color: #2faa2f;
+  color: white;
+}
+
+.contact_cliped .contact_wrapper .contact .contact_detail .phone-email .phone i {
+  margin-right: .3rem;
+  font-size: 1.2rem;
+}
+
+.contact_cliped .contact_wrapper .contact .contact_detail .phone-email .email {
+  background-color: #c9c9c9;
+}
+
+.contact_cliped .contact_wrapper .contact .contact_detail .phone-email .email i {
+  color: white;
+  margin-right: .3rem;
+  font-size: 1.2rem;
+}
+
+.contact_cliped .contact_wrapper .contact .location div {
+  display: flex;
+  border: 1px solid #b6b6b6;
+  border-radius: .7rem;
+  padding: 1.3rem 1.3rem;
+}
+
+.contact_cliped .contact_wrapper .contact .location div p {
+  line-height: 1.7rem;
+}
+
+.contact_cliped .contact_wrapper .contact .location div i {
+  color: #4e4e4e;
+  margin-right: .5rem;
+  font-size: 1.6rem;
+}
+/*# sourceMappingURL=main.css.map */
